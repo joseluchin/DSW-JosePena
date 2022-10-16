@@ -1,15 +1,32 @@
 .encabezado{
-    background-color: black;
+    background-color:#2192FF;
+    text-align: center;
+    padding: 30px;
 }
 .menunav{
-    background-color: blue;
+    background-color: #38E54D;
+    padding: 30px;
 }
 .contenizq{
-    background-color: brown;
+    background-color: #9CFF2E;
+    padding: 30px;
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr 1fr;
 }
 .opciones{
-    background-color: crimson;
+    background-color:rgb(0, 128, 64);
+    padding: 30px;
+    grid-column: 1/4;
 }
 .contender{
+    background-color: #FDFF00;
+    padding: 30px;
+    grid-column: 4/5;
+}
+.piepagina{
+    background-color: green;
+    padding: 30px;
+}
+.menu{
     background-color: blueviolet;
 }
