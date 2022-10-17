@@ -7,7 +7,12 @@
     text-align: center;
     padding: 30px;
 }
-
+.encabezado3{
+    text-align: justify;
+}
+.parrafo{
+    text-align: justify;
+}
 .menunav {
     background-color: #38E54D;
     padding: 30px;
