@@ -10,6 +10,30 @@
 .encabezado3{
     text-align: justify;
 }
+ul.migapan {
+    padding: 10px 16px;
+    list-style: none;
+    background-color:greenyellow;
+    text-align: left;
+}
+ul.migapan li {
+    display: inline;
+    font-size: 18px;
+}
+ul.migapan li+li:before {
+    padding: 8px;
+    color: black;
+    content: "/\00a0";
+}
+ul.migapan li a {
+    color: #0275d8;
+    text-decoration: none;
+}
+ul.migapan li a:hover {
+    color: #01447e;
+    text-decoration: underline;
+}
+
 .parrafo{
     text-align: justify;
 }

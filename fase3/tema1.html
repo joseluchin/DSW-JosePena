@@ -14,6 +14,14 @@
         <h1>
             Tema 1 Fundamentos de CSS
         </h1>
+        <ul class="migapan">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="autor.html">Autor</a></li>
+            <li><a href="recurso1.html">Recurso 1</a></li>
+            <li><a href="recurso2.html">Recurso 2</a></li>
+            <li><a href="tema1.html">Tema 1</a></li>
+            <li><a href="tema2.html">Tema 2</a></li>
+        </ul>
     </header>
     <nav class="menunav">
         <ul class="menu">
@@ -97,17 +105,71 @@
                 </p>
                 </p>
                 <h4>Tipos de selectores</h4>
-                
+                <p class="parrafo">
+                    Los selectores con los elementos o reglas que usamos para definir y asignar atributos a elementos
+                    visuales HTML y se clasifican en categorias de acuerdo a la forma en la cual los definimos.A
+                    continuacion los mas usados.
+                </p>
+                <ul>
+                    <li>
+                        <h4>Selector Universal</h4>
+                        <p class="parrafo">
+                            Es aquel que utilizamos para definir para modificar los elementos de toda la página web.
+                        <pre>
+                               Sintaxis * { atributo:valor; } Ejemplo * { color: grey; }
+                            </pre>
+                        </p>
+                    </li>
+                    <li>
+                        <h4>Selector de etiqueta</h4>
+                        <p class="parrafo">
+                            Es el que definimos usando el mismo nombre del elemento HTML.
+                        <pre>
+                            Sintaxis etiqueta { atributo:valor } Ejemplo p {color: green;}
+                            </pre>
+                        </p>
+                    </li>
+                    <li>
+                        <h4> Selector de Clase</h4>
+                        <p class="parrafo">
+                            Se indica a través del atributo class directamente en la etiqueta HTML y se define
+                            anteponiendo un punto en el archivo CSS.
+                        <pre>
+                            Sintaxis .clase { atributo:valor } Ejemplo .blend{color: red;}
+                            </pre>
+                        </p>
+                    </li>
+                    <li>
+                        <h4>Selector Identificador</h4>
+                        <p class="parrafo">
+                            Se identifica a traves de un id unico dado en un documento y se indica anteponiedo un
+                            simbolo numeral o almoadilla
+                        <pre>
+                            Sintaxis #id { atributo:valor } Ejemplo #cent {color: blue;}
+                            </pre>
+                        </p>
+                    </li>
+                </ul>
 
             </article>
 
         </section>
         <aside class="contender">
-            contenido lado izquierdo
+            <h4>Estructura de un elemento en CSS</h4>
+            <img src="img/tema1/Estructura CSS.jpg">
+            <h4>Tipos de selectores en CSS</h4>
+            <img src="img/tema1/SelecUni.jpg">
+            <img src="img/tema1/SelecEticq.jpg">
+            <img src="img/tema1/SelecId.jpg">
+            <img src="img/tema1/SelecClass.jpg">
         </aside>
     </main>
     <footer class="piepagina">pie de pagina
-
+        <p class="parrafo">
+            Jose Luis Peña Peña <br>
+            Estudiante Universidad nacional abierta y a distancia <br>
+            jlpenap@unadvirtual.edu.co
+        </p>
     </footer>
 
 </body>
