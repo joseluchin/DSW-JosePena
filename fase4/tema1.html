@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tema 1 Fundamentos de CSS</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body class="cuerpo">
+    <header class="encabezado">
+        <h1>
+            Tema 1 Fundamentos de CSS
+        </h1>
+        <ul class="migapan">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="autor.html">Autor</a></li>
+            <li><a href="recurso1.html">Recurso 1</a></li>
+            <li><a href="recurso2.html">Recurso 2</a></li>
+            <li><a href="tema1.html">Tema 1</a></li>
+            <li><a href="tema2.html">Tema 2</a></li>
+            <li><a href="actividad1.html">Actividad 1</a></li>
+            <li><a href="actividad2.html">Actividad 2</a></li>
+        </ul>
+    </header>
+    <nav class="menunav">
+        <ul class="menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="#">Temas</a>
+                <ul>
+                    <li><a href="tema1.html">Fundamentos de CSS</a></li>
+                    <li><a href="tema2.html">Frameworks CSS</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Recursos digitales</a>
+                <ul>
+                    <li><a href="recurso1.html">Recurso Digital Fundamentos de CSS</a></li>
+                    <li><a href="recurso2.html">Recurso Digital Frameworks CSS</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Aprendizaje</a>
+                <ul>
+                    <li><a href="actividad1.html">Actividad 1</a></li>
+                    <li><a href="actividad2.html">Actividad 2</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Acerca de</a>
+                <ul>
+                    <li><a href="autor.html">Autor</a> </li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <main class="contenizq">
+        <section class="opciones">
+            <article>
+                <h3 class="encabezado3">
+                    Fundamentos de CSS (Cascading stylesheet)
+                </h3>
+                <p class="parrafo">
+                    Como diseñadores web o desarroladores tenemos a la mano el mejor lenguaje para dar estilo a nuestros
+                    sitios en HTML, la importancia de CSS en el diseño web actual radica en que nos permite separar el
+                    contenido de las páginas web de la forma de presentación. <br>
+                    CSS (Cascading stylesheet) o en español hojas de estilo en cascada fue desarrollado por el W3C en
+                    1996, se denomina hojas de estilo en cascada por que las caracteristicas se aplican de arriba hacia
+                    abajo mediante reglas que poseen un esquema prioritario. <br>
+                    Segun el sitio web <cite>https://elrincondedanigarcia.com/css-fundamentos/</cite> El objetivo de CSS
+                    es dar estilo a un documento HTML indicando a los navegadores como deben mostrar o que
+                    comportamiento visual tiene que tener cada uno de los elementos que compone nuestros documentos
+                    HTML. <br>
+                    Existen tres formas de aplicar estilos a documentos HTML: <br>
+                <ul>
+                    <li>
+                        <h4>Mediante el atributo style:</h4>
+                        <p class="parrafo">
+                            El atributo style pertenece a CSS pero se inserta dentro de las etiquetas HTML directamente.
+                            <br>
+                        </p>
+                    </li>
+                    <li>
+                        <h4>Mediante etiqueta style</h4>
+                    </li>
+                    <p class="parrafo">
+                        Dentro del documento de HTML, usando un bloque style, generalmente cuando se usa este sistema se
+                        ubica en el head de la página.
+                    </p>
+                    <li>
+                        <h4>Mediante un archivo CSS externo</h4>
+                    </li>
+                    <p class="parrafo">
+                        Esta es la forma mas recomendada para definir los estilos ya que ofrece una gran versatilidad al
+                        momento de dar estilos por ejemplo de manera masiva, ofrece una manera mas practica de
+                        administrar los estilos aplicados al sitio web solo es necesario definir un archivo de texto con
+                        la extensión .CSS <br>
+                        Para referenciar el archivo .CSS en cada archivo HTML solo es necesario referenciarlo dentro del
+                        encabezado. <br>
+                    </p>
+
+                </ul>
+                <h4>Sistema de prioridades</h4>
+                <p class="parrafo">
+                    CSS aplicara un sistema de prioridad en el cual va desde lo mas especifico a lo mas generico en
+                    cascada ya que en caso de existir reglas en el mismo nivel se ejecutara o aplicara siempre la
+                    ultima.
+                </p>
+                </p>
+                <h4>Tipos de selectores</h4>
+                <p class="parrafo">
+                    Los selectores con los elementos o reglas que usamos para definir y asignar atributos a elementos
+                    visuales HTML y se clasifican en categorias de acuerdo a la forma en la cual los definimos.A
+                    continuacion los mas usados.
+                </p>
+                <ul>
+                    <li>
+                        <h4>Selector Universal</h4>
+                        <p class="parrafo">
+                            Es aquel que utilizamos para definir para modificar los elementos de toda la página web.
+                        <pre>
+                               Sintaxis * { atributo:valor; } Ejemplo * { color: grey; }
+                            </pre>
+                        </p>
+                    </li>
+                    <li>
+                        <h4>Selector de etiqueta</h4>
+                        <p class="parrafo">
+                            Es el que definimos usando el mismo nombre del elemento HTML.
+                        <pre>
+                            Sintaxis etiqueta { atributo:valor } Ejemplo p {color: green;}
+                            </pre>
+                        </p>
+                    </li>
+                    <li>
+                        <h4> Selector de Clase</h4>
+                        <p class="parrafo">
+                            Se indica a través del atributo class directamente en la etiqueta HTML y se define
+                            anteponiendo un punto en el archivo CSS.
+                        <pre>
+                            Sintaxis .clase { atributo:valor } Ejemplo .blend{color: red;}
+                            </pre>
+                        </p>
+                    </li>
+                    <li>
+                        <h4>Selector Identificador</h4>
+                        <p class="parrafo">
+                            Se identifica a traves de un id unico dado en un documento y se indica anteponiedo un
+                            simbolo numeral o almoadilla
+                        <pre>
+                            Sintaxis #id { atributo:valor } Ejemplo #cent {color: blue;}
+                            </pre>
+                        </p>
+                    </li>
+                </ul>
+
+            </article>
+
+        </section>
+        <aside class="contender">
+            <h4>Estructura de un elemento en CSS</h4>
+            <img src="img/tema1/Estructura CSS.jpg">
+            <h4>Tipos de selectores en CSS</h4>
+            <img src="img/tema1/SelecUni.jpg">
+            <img src="img/tema1/SelecEticq.jpg">
+            <img src="img/tema1/SelecId.jpg">
+            <img src="img/tema1/SelecClass.jpg">
+        </aside>
+    </main>
+    <footer class="piepagina">
+        <p class="parrafo">
+            Jose Luis Peña Peña <br>
+            Estudiante Universidad nacional abierta y a distancia <br>
+            jlpenap@unadvirtual.edu.co
+        </p>
+    </footer>
+
+</body>
+
+</html>

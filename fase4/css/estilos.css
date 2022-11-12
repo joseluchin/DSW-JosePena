@@ -1,0 +1,116 @@
+.cuerpo {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.encabezado {
+    background-color: #2192FF;
+    text-align: center;
+    padding: 30px;
+}
+.encabezado3{
+    text-align: justify;
+}
+ul.migapan {
+    padding: 10px 16px;
+    list-style: none;
+    background-color:greenyellow;
+    text-align: left;
+}
+ul.migapan li {
+    display: inline;
+    font-size: 18px;
+}
+ul.migapan li+li:before {
+    padding: 8px;
+    color: black;
+    content: "/\00a0";
+}
+ul.migapan li a {
+    color: #0275d8;
+    text-decoration: none;
+}
+ul.migapan li a:hover {
+    color: #01447e;
+    text-decoration: underline;
+}
+
+.parrafo{
+    text-align: justify;
+}
+.menunav {
+    background-color: #38E54D;
+    padding: 30px;
+}
+
+.contenizq {
+    background-color: #9CFF2E;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.opciones {
+    background-color: rgb(0, 128, 64);
+    padding: 30px;
+    grid-column: 1/4;
+}
+
+
+.contender {
+    background-color: #FDFF00;
+    padding: 30px;
+    grid-column: 4/5;
+}
+
+.piepagina {
+    background-color: green;
+    padding: 30px;
+}
+
+/* .menu {
+    background-color: #2192FF;
+} */
+
+.menu {
+    padding: 0px 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    list-style: none;
+}
+
+.menu>li {
+    float: left;
+}
+
+.menu li a {
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    padding: 10px 80px;
+    display: block;
+}
+
+.menu li a:hover {
+    background-color: aqua;
+}
+.menu li ul{
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    min-width: 140px;
+    list-style-type: none;
+}
+.menu li:hover>ul{
+    display: block;
+}
+.menu li ul li{
+    position: relative;
+}
+.menu li ul li ul{
+    right: 140px;
+}
