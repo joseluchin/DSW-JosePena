@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recurso Digital Fundamentos de CSS</title>
     <link rel="stylesheet" href="css/estilos.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 </head>
+
 <body class="cuerpo">
     <header class="encabezado">
         <h1>Recurso Digital Fundamentos de CSS</h1>
@@ -21,33 +25,61 @@
             <li><a href="actividad2.html">Actividad 2</a></li>
         </ul>
     </header>
-    <nav class="menunav">
-        <ul class="menu">
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="#">Temas</a> 
-                <ul>
-                    <li><a href="tema1.html">Fundamentos de CSS</a></li>
-                    <li><a href="tema2.html">Frameworks CSS</a></li>
+    <nav class="navbar navbar-expand-lg bg-Dark">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Temas
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="tema1.html">Fundamentos de CSS</a></li>
+                            <li><a class="dropdown-item" href="tema2.html">Frameworks en CSS</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Recursos digitales
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="recurso1.html">Recurso Digital Fundamentos de CSS</a>
+                            </li>
+                            <li><a class="dropdown-item" href="recurso2.html">Recurso Digital Frameworks CSS</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Actividades de aprendizaje
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="actividad1.html">Actividad 1 fundamentos de CSS</a></li>
+                            <li><a class="dropdown-item" href="actividad2.html">Actividad 2 frameworks en CSS
+                                </a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Acerca de
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="autor.html">Autor</a></li>
+                        </ul>
+                    </li>
                 </ul>
-            </li>
-            <li><a href="#">Recursos digitales</a> 
-                <ul>
-                    <li><a href="recurso1.html">Recurso Digital Fundamentos de CSS</a></li>
-                    <li><a href="recurso2.html">Recurso Digital Frameworks CSS</a></li>
-                </ul>
-            </li>
-            <li><a href="#">Aprendizaje</a> 
-                <ul>
-                    <li><a href="actividad1.html">Actividad 1</a></li>
-                    <li><a href="actividad2.html">Actividad 2</a></li>
-                </ul>
-            </li>
-            <li><a href="#">Acerca de</a> 
-                <ul>
-                    <li><a href="autor.html">Autor</a> </li>
-                </ul>
-            </li>
-        </ul>
+            </div>
+        </div>
     </nav>
     <main class="contenizq">
         <section class="opciones">
@@ -55,7 +87,10 @@
                 <h3>
                     Video fundamentos de CSS
                 </h3>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/qoQuWH9lVuo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/qoQuWH9lVuo"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
             </article>
 
         </section>
@@ -74,6 +109,9 @@
         </p>
 
     </footer>
-    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
